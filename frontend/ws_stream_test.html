@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input id="input" type="text" placeholder="Ask JARVIS..."/>
+    <button onclick="send()">Send</button>
+    <div id="response"></div>
+
+<script>
+    const ws = new WebSocket("ws://localhost:8000/ws/stream/123");
+    
+    ws.onmessage = (event) => {
+        if (event.data === "[DONE]") {
+            document.getElementById("response").innerHTML += "<br><br>Done.";
+            return;
+        }
+        document.getElementById("response").innerHTML += event.data;
+    };
+    
+    function send() {
+        const input = document.getElementById("input").value;
+        document.getElementById("response").innerHTML = "";
+        ws.send(input);
+    }
+</script>
+</body>
+</html>

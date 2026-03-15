@@ -2,7 +2,6 @@
 .env
 .env.*
 !.env.example
-.env
 
 # Virtual environments
 .venv/
@@ -54,4 +53,6 @@ logs/
 .DS_Store
 Thumbs.db
 
-practice.ipynb.env
+practice.ipynb
+notes.md
+Checkpoints
