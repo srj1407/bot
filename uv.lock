@@ -198,6 +198,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-experimental" },
     { name = "langchain-openai" },
+    { name = "langchain-sandbox" },
     { name = "langchain-tavily" },
     { name = "langgraph" },
     { name = "langsmith" },
@@ -220,6 +221,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-experimental", specifier = ">=0.4.1" },
     { name = "langchain-openai", specifier = ">=1.1.11" },
+    { name = "langchain-sandbox", specifier = ">=0.0.3" },
     { name = "langchain-tavily", specifier = ">=0.2.17" },
     { name = "langgraph", specifier = ">=1.1.2" },
     { name = "langsmith", specifier = ">=0.7.17" },
@@ -1176,6 +1178,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/40/cd/439be2b8deb8bd0d4c470c7c7f66698a84d823e583c3d36a322483cb7cab/langchain_openai-1.1.11.tar.gz", hash = "sha256:44b003a2960d1f6699f23721196b3b97d0c420d2e04444950869213214b7a06a", size = 1088560, upload-time = "2026-03-09T23:02:36.894Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f0/0f/e4cb42848c25f65969adfb500a06dea1a541831604250fd0d8aa6e54fef5/langchain_openai-1.1.11-py3-none-any.whl", hash = "sha256:a03596221405d38d6852fb865467cb0d9ff9e79f335905eb6a576e8c4874ac71", size = 87694, upload-time = "2026-03-09T23:02:35.651Z" },
+]
+
+[[package]]
+name = "langchain-sandbox"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/bd/31183b7c7d3f22ecbd0598bac764f2d5a79509aebfefc91b0f0a3b816357/langchain_sandbox-0.0.3.tar.gz", hash = "sha256:4736d5e5671bbf5ec93ee5c9b26ab1abc2b6859e75cea3b390de8948a8652a57", size = 22430, upload-time = "2025-04-15T16:30:32.727Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/12/22/2f4154ca10f49bfde86124ced7fab304972cb39586d03eb3785b17ffb25f/langchain_sandbox-0.0.3-py3-none-any.whl", hash = "sha256:03068c117a2e125460c88b8c0aded49644e87646c154b51412fd64d05159a505", size = 5546, upload-time = "2025-04-15T16:30:31.913Z" },
 ]
 
 [[package]]
